@@ -1,0 +1,36 @@
+<!-- <p>client works!</p> -->
+<div class="clientDiv">
+    <div class="title">
+        <p style="font-size: 18px;"><strong>Clients</strong></p>
+        <p>Here's the clients list</p>
+    </div>
+    <div class="table-details">
+        <div class="card">
+            <form class="d-flex">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <div class="row col-md-8">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" class="form-control me-2 col-12" placeholder="search by name, email.." aria-label="search">
+                </div>
+                <div style="padding: 0px 30px;" class="col-md-4">
+                    <button class="btn btn-outline col-12" type="submit">Add new Client</button>
+                </div>
+            </form>&nbsp;
+            <p></p>
+            <table class="clientTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Residential Address</th>
+                </tr>
+                <tr (click)="view()" *ngFor="let detail of clientDetails" class="client-details">
+                    <td>{{detail.name}}</td>
+                    <td>{{detail.email}}</td>
+                    <td>{{detail.phone}}</td>
+                    <td>{{detail.address}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<!-- <p>client-profile works!</p> -->
+<div class="main-profileDiv">
+    <div class="client">
+        <div><strong>Client Profile</strong></div>
+        <p>View Client profile here</p>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="card" style="background-color: whitesmoke; display: flex; border: none;">
+                <p><strong>Client's Picture</strong></p>&nbsp;
+                <div class="client-image">
+                    <div class="image" >
+                        <img src="assets/profile-icon.webp" alt="Avatar" style="width:200px; display: flex; ">
+                    </div>
+                    <div class="image-details" style="margin-right: 550px;">
+                        <p><strong>Odusote Mayokun</strong></p>
+                        <p class="image-text">adegoketemitope1909@gmail.com</p>
+                        <p class="image-text">Female &nbsp;  54 years old &nbsp; Nigerian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="client-profile-container">
+                <div class="client-profile" *ngFor="let profile of clientProfile">
+                    <div class="ng-div" >
+                        <div class="name">
+                            <p class="clientprofile-text">Full Name</p>
+                            <p><strong>{{profile.name}}</strong></p>
+                        </div>
+                        <div class="applicant">
+                            <p class="clientprofile-text">Applicant Fullname<span style="color: red;">(as shown in passport)</span></p>
+                            <p><strong>{{profile.applicant}}</strong></p>
+                        </div>
+                        <div class="Pdate" style="display: flex; justify-content: space-between;">
+                            <div class="birthPlace">
+                                <p class="clientprofile-text">Place of birth</p>
+                                <p><strong>{{profile.birthPlace}}</strong></p>
+                            </div>
+                            <div class="birthDate">
+                                <p class="clientprofile-text">Date of Birth</p>
+                                <p><strong>{{profile.birthDate}}</strong></p>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <p class="clientprofile-text">Marital Status</p>
+                            <p><strong>{{profile.status}}</strong></p>
+                        </div>
+                        <div class="occupation">
+                            <p class="clientprofile-text">Current Occupation</p>
+                            <p><strong>{{profile.occupation}}</strong></p>
+                        </div>
+                        <div class="address">
+                            <p class="clientprofile-text">Residential Address</p>
+                            <p><strong>{{profile.address}}</strong></p>
+                        </div>
+                        <div class="interest">
+                            <p class="clientprofile-text">Current of interest</p>
+                            <p><strong>{{profile.interest}}</strong></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="email">
+                            <p class="clientprofile-text">Email</p>
+                            <p><strong>{{profile.email}}</strong></p>
+                        </div>
+                        <div class="gender">
+                            <p class="clientprofile-text">Gender</p>
+                            <p><strong>{{profile.gender}}</strong></p>
+                        </div>
+                        <div class="citizen">
+                            <p class="clientprofile-text">Country of Citizenship</p>
+                            <p><strong>{{profile.citizen}}</strong></p>
+                        </div>
+                        <div class="education">
+                            <p class="clientprofile-text">Education<span style="color: red;">(Client's highest level of Education)</span></p>
+                            <p><strong>{{profile.education}}</strong></p>
+                        </div>
+                        <div class="phone">
+                            <p class="clientprofile-text">Phone Number</p>
+                            <p><strong>{{profile.phone}}</strong></p>
+                        </div>
+                        <div class="mailAdd">
+                            <p class="clientprofile-text">Mailing Address</p>
+                            <p><strong>{{profile.applicant}}</strong></p>
+                        </div>
+                        <div class="purpose">
+                            <p class="clientprofile-text">Purpose of Traveling</p>
+                            <p><strong>{{profile.purpose}}</strong></p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="button">
+                        <button class="btn">Back</button>
+                    </div>
+            </div> 
+         </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.main-profileDiv{
+    font-size: 15px;
+    padding: 20px 50px;
+}
+.client-profile-container{
+    margin-top: 50px;
+    // width:50% ;
+    border: 1px solid thin;
+}
+.client-profile{
+    display: flex;
+    justify-content: space-between;
+}
+.client-image{
+    display: flex;
+    justify-content: space-between;
+}
+.image-text{
+  color: grey;
+}
+.clientprofile-text{
+    color: grey;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    background-color: orange;
+    color: white;
+    width: 173px;
+    border-radius: 5px;
+}
+.button{
+    float: right;
+    margin-right: 116px;
+    margin-top: 40px;
+}
+.card{
+    padding: 20px;
+    border: none;
+}
+// .card-body{
+//     padding: 24px;
+//     border: none;
+// }
