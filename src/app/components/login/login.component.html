@@ -1,22 +1,28 @@
 <!-- <p>login works!</p> -->
 <div class="card-container">
+    <div class="loginTopColor"></div>
     <!-- <div class="card col-5"> -->
         <div class="card">
             <div class="card-body">
+                <div class="image">
+                    <img src="assets/logo.png" alt="">
+                </div>
                 <form [formGroup]="loginInForm">
                     <p><strong>Login</strong></p>
                     <p>Login to your account</p>
                     <div class="form-group">
-                        <label for="Email"><strong>Email</strong></label>
+                        <p><label for="Email"><strong>Email</strong></label></p>
                         <input type="text" class="form-control" formControlName="email">
                     </div>&nbsp;
                     <div class="form-group">
-                        <label for="password"><strong>Password</strong></label>
+                        <p><label for="password"><strong>Password</strong></label></p>
                         <input type="text" class="form-control" formControlName="password">
                     </div>&nbsp;
+                   <div class="main-buttonDiv">
                     <div class="button">
                         <button class="btn" (click)="login()">LOGIN</button>
                     </div>
+                   </div>
                 </form>
             </div>
         </div>

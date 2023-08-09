@@ -14,17 +14,20 @@
 .sidenav a {
     padding: 6px 8px 35px 16px;
     text-decoration: none;
-    font-size: 18px;
-    color: #818181;
+    font-size: 15px;
+    color: black;
     display: block;
     font-style: normal;
     font-weight: 500;
 }
-
+.fa-commenting-o{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
 .sidenav a:hover {
     color: orange;
 }
-
 .main {
     margin-left: 254px;
     font-size: 28px;
@@ -35,6 +38,7 @@
 img {
     padding-left: 40px;
     margin-bottom: 20px;
+    border-radius: 50% ;
 }
 
 @media screen and (max-height: 450px) {
