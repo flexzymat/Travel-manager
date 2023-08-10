@@ -51,13 +51,17 @@ img {
     // background-color: orange;
     // border: 0;
     display: flex;
-    .btn {
-        display: flex;
-        border-radius: 0;
-        background-color: gold;
-        padding: 9px 100px;
-        color: #ffffff;
-        font-size: 10px;
-        bottom:10px
-    }
+    position: relative;
+    width: 100%;
+}
+.btn{
+    display: flex;
+    border-radius: 0;
+    background-color: gold;
+    padding: 9px 100px;
+    color: #ffffff;
+    font-size: 10px;
+    bottom:10px;
+    position: relative;
+    width: 50%;
 }

@@ -2,3 +2,20 @@
     top: 8px;
     position: relative;
 }
+img{
+    width: 30px;
+    border-radius: 50%;
+}
+.navbar-nav{
+    display: flex;
+    position: relative;
+}
+.navbar-div{
+    display: flex;
+    position: relative;
+    // margin-left: 572px;
+}
+.nav-link{
+    font-size: small;
+    color: black;
+}
